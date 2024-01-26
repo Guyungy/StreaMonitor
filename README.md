@@ -3,8 +3,8 @@ A Python3 application for monitoring and saving (mostly adult) live streams from
 
 Inspired by [Recordurbate](https://github.com/oliverjrose99/Recordurbate)
 
-## Supported sites
-| Site name      | Abbreviation | Aliases                     | Quirks                 | Selectable resolution |
+## 支持的站点
+| 站点名称         | 缩写 | 别名                       | 特殊情况               | 可选择的分辨率     |
 |----------------|--------------|-----------------------------|------------------------|-----------------------|
 | Amateur.TV     | `ATV`        |                             |                        | Yes                   |
 | Bongacams      | `BC`         |                             |                        | Yes                   |
