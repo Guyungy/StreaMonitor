@@ -1,7 +1,5 @@
 # StreaMonitor
-A Python3 application for monitoring and saving (mostly adult) live streams from various websites.
 
-Inspired by [Recordurbate](https://github.com/oliverjrose99/Recordurbate)
 
 ## 支持的站点
 | 站点名称         | 缩写 | 别名                       | 特殊情况               | 可选择的分辨率     |
