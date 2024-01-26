@@ -28,55 +28,56 @@ Currently not supported:
 
 There are hundreds of clones of the sites above, you can read about them on [this site](https://adultwebcam.site/clone-sites-by-platform/).
 
-## Requirements
+## 要求
 * Python 3
-  * Install packages listed in requirements.txt with pip.
+  * 使用pip安装requirements.txt中列出的包。
 * FFmpeg
 
-## Usage
+## 使用方法
 
-The application has the following interfaces:
-* Console
-* External console via ZeroMQ (sort of working)
-* Web interface (only status)
+该应用程序具有以下界面：
+* 控制台
+* 通过ZeroMQ的外部控制台（有点工作）
+* Web界面（仅限状态）
 
-#### Starting and console
-Start the downloader (it does not fork yet)\
-Automatically imports all streamers from the config file.
+#### 启动和控制台
+启动下载器（目前尚未分叉）\
+自动从配置文件导入所有流媒体用户。
 ```
 python3 Downloader.py
 ```
 
-On the console you can use the following commands:
+在控制台上，您可以使用以下命令：
 ```
-add <username> <site> - Add streamer to the list (also starts monitoring)
-remove <username> [<site>] - Remove streamer from the list
-start <username> [<site>] - Start monitoring streamer
-start * - Start all
-stop <username> [<site>] - Stop monitoring
-stop * - stop all
-status - Status display 
-status2 - A slightly more readable status table
-quit - Clean exit (Pressing CTRL-C also behaves like this)
-```
-For the `username` input, you usually have to enter the username as represented in the original URL of the room. 
-Some sites are case-sensitive.
-
-For the `site` input, you can use either the full or the short format of the site name. (And it is case-insensitive)
-
-#### "Remote" controller
-Add or remove a streamer to record (Also saves config file)
-```
-python3 Controller.py add <username> <website>
-python3 Controller.py remove <username>
+add <用户名> <站点> - 将流媒体用户添加到列表（同时开始监控）
+remove <用户名> [<站点>] - 从列表中删除流媒体用户
+start <用户名> [<站点>] - 启动监控流媒体用户
+start * - 启动所有
+stop <用户名> [<站点>] - 停止监控
+stop * - 停止所有
+status - 显示状态
+status2 - 稍微更可读的状态表
+quit - 安全退出（按CTRL-C也会执行此操作）
 ```
 
-Start/stop recording streamers
+对于`username`输入，通常必须输入原始URL中表示的用户名。
+某些站点区分大小写。
+
+对于`site`输入，可以使用站点名称的完整格式或简短格式。 （不区分大小写）
+
+#### "远程"控制器
+添加或删除要录制的流媒体用户（同时保存配置文件）
 ```
-python3 Controller.py <start|stop> <username>
+python3 Controller.py add <用户名> <网站>
+python3 Controller.py remove <用户名>
 ```
 
-List the streamers in the config
+启动/停止录制流媒体用户
+```
+python3 Controller.py <start|stop> <用户名>
+```
+
+列出配置中的流媒体用户
 ```
 python3 Controller.py status
 ```
