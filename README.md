@@ -22,11 +22,6 @@ Inspired by [Recordurbate](https://github.com/oliverjrose99/Recordurbate)
 | StripChat      | `SC`         | XHamsterLive,...            |                        | Yes                   |
 | StripChat VR   | `SCVR`       |                             | for VR videos          | No                    |
 
-Currently not supported:
-* ImLive (Too strict captcha protection for scraping)
-* LiveJasmin (No nudity in free streams)
-
-There are hundreds of clones of the sites above, you can read about them on [this site](https://adultwebcam.site/clone-sites-by-platform/).
 
 ## 要求
 * Python 3
@@ -82,27 +77,27 @@ python3 Controller.py <start|stop> <用户名>
 python3 Controller.py status
 ```
 
-#### Web interface
+#### Web界面
 
-You can access the web interface on port 5000. 
-It just prints the same information as the status command. 
-You can also get a list of the recorded streams.
+您可以在端口5000上访问Web界面。
+它只是打印与状态命令相同的信息。
+您还可以获取记录的流媒体列表。
 
-Further improvements can be expected.
+可以期待更多的改进。
 
-## Docker support
+## Docker支持
 
-You can run this application in docker. I prefer docker-compose so I included an example docker-compose.yml file that you can use.
-Simply start it in the folder with `docker-compose up`.
+您可以在Docker中运行此应用程序。我更喜欢使用docker-compose，因此我包含了一个示例docker-compose.yml文件供您使用。
+只需在包含该文件的文件夹中使用 `docker-compose up` 启动它。
 
-## Configuration
+## 配置
 
-You can set some parameters in the parameters.py.
+您可以在 parameters.py 文件中设置一些参数。
 
-## Disclaimer
+## 免责声明
 
-This program is only a proof of concept and education project, I don't encourage anybody to use it. \
-Most (if not every) streamers disallow recording their shows. Please respect their wish. \
-If you don't, and you record them despite this request, please don't ever publish or share any recordings. \
-If you either record or share the recorded shows, you might be legally punished. \
-Also, please don't use this tool for monetization in any way.
+此程序仅为概念验证和教育项目，我不鼓励任何人使用它。\
+大多数（如果不是全部）的流媒体用户都禁止录制其演出。请尊重他们的意愿。\
+如果您违背此要求而记录了他们，千万不要发布或分享任何录音。\
+如果您录制或分享了录制的演出，可能会受到法律惩罚。\
+此外，请不要以任何方式使用此工具进行盈利。
