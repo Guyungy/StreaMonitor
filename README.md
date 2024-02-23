@@ -1,24 +1,22 @@
 # StreaMonitor
-
-
 ## 支持的站点
-| 站点名称         | 缩写 | 别名                       | 特殊情况               | 可选择的分辨率     |
-|----------------|--------------|-----------------------------|------------------------|-----------------------|
-| Amateur.TV     | `ATV`        |                             |                        | Yes                   |
-| Bongacams      | `BC`         |                             |                        | Yes                   |
-| Cam4           | `C4`         |                             |                        | Yes                   |
-| Cams.com       | `CC`         |                             |                        | Currently only 360p   |
-| CamSoda        | `CS`         |                             |                        | Yes                   |
-| Chaturbate     | `CB`         |                             |                        | Yes                   |
-| Cherry.TV      | `CHTV`       |                             |                        | Yes                   |
-| Dreamcam VR    | `DCVR`       |                             |                        | No                    |
-| Flirt4Free     | `F4F`        |                             |                        | Yes                   |
-| ManyVids Live  | `MV`         |                             |                        | Yes                   |
-| MyFreeCams     | `MFC`        |                             |                        | Yes                   |
-| SexChat.hu     | `SCHU`       |                             | use the id as username | No                    |
-| StreaMate      | `SM`         | PornHubLive, PepperCams,... |                        | Yes                   |
-| StripChat      | `SC`         | XHamsterLive,...            |                        | Yes                   |
-| StripChat VR   | `SCVR`       |                             | for VR videos          | No                    |
+| 站点名称          | 缩写     | 别名                          | 特殊情况                   | 可选择的分辨率             |
+| ------------- | ------ | --------------------------- | ---------------------- | ------------------- |
+| Amateur.TV    | `ATV`  |                             |                        | Yes                 |
+| Bongacams     | `BC`   |                             |                        | Yes                 |
+| Cam4          | `C4`   |                             |                        | Yes                 |
+| Cams.com      | `CC`   |                             |                        | Currently only 360p |
+| CamSoda       | `CS`   |                             |                        | Yes                 |
+| Chaturbate    | `CB`   |                             |                        | Yes                 |
+| Cherry.TV     | `CHTV` |                             |                        | Yes                 |
+| Dreamcam VR   | `DCVR` |                             |                        | No                  |
+| Flirt4Free    | `F4F`  |                             |                        | Yes                 |
+| ManyVids Live | `MV`   |                             |                        | Yes                 |
+| MyFreeCams    | `MFC`  |                             |                        | Yes                 |
+| SexChat.hu    | `SCHU` |                             | use the id as username | No                  |
+| StreaMate     | `SM`   | PornHubLive, PepperCams,... |                        | Yes                 |
+| StripChat     | `SC`   | XHamsterLive,...            |                        | Yes                 |
+| StripChat VR  | `SCVR` |                             | for VR videos          | No                  |
 
 
 ## 要求
@@ -58,11 +56,16 @@ quit - 安全退出（按CTRL-C也会执行此操作）
 
 对于`site`输入，可以使用站点名称的完整格式或简短格式。 （不区分大小写）
 
-#### "远程"控制器
-添加或删除要录制的流媒体用户（同时保存配置文件）
+### 添加
 ```
-python3 Controller.py add <用户名> <网站>
-python3 Controller.py remove <用户名>
+python3 Controller.py add xxx SC
+```
+```
+python3 Controller.py add beverlyvega CB
+```
+删除
+```
+python3 Controller.py remove xxx
 ```
 
 启动/停止录制流媒体用户
