@@ -1,2 +1,2 @@
-python3 Controller.py add AliceLebel SC
+python  Controller.py add baby_luu_  SC
 python3 Controller.py remove Aoki_sweet SC
